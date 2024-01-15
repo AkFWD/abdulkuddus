@@ -485,7 +485,18 @@ space
   margin-bottom: 25px;
 }
 
-
+@media (max-width: 1400px) {
+  .p-lg-30-0 {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 920px) {
+  .p-md-15-0 {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+}
 /* ------------------------------
 
 app marcup
@@ -751,7 +762,135 @@ app marcup
   -webkit-transform: translateX(-150px);
           transform: translateX(-150px);
 }
+@media (max-width: 920px) {
+  /* ----- container ----- */
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
+  /* ----- preloader ----- */
+  .art-preloader {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* ----- scroll frame ----- */
+  .art-scroll-frame {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .art-app {
+    padding: 0;
+    /* ----- mobile top bar ----- */
+  }
+  footer {
+      margin-bottom: 15px;
+  }
+  .art-app .art-mobile-top-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .art-app .art-app-wrapper {
+    border-radius: 0;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  .art-app .art-app-wrapper .art-app-container {
+    width: 100%;
+    /* ----- info bar ----- */
+    /* ----- content ----- */
+    /* ----- menu bar ----- */
+  }
+  .art-app .art-app-wrapper .art-app-container .art-info-bar {
+    position: absolute;
+    left: -290px;
+    width: 290px;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  .art-app .art-app-wrapper .art-app-container .art-info-bar.art-active {
+    -webkit-transform: translateX(290px);
+            transform: translateX(290px);
+  }
+  .art-app .art-app-wrapper .art-app-container .art-info-bar .art-info-bar-frame .art-info-bar-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .art-app .art-app-wrapper .art-app-container .art-info-bar .art-info-bar-frame .art-info-bar-header .art-info-bar-btn {
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  .art-app .art-app-wrapper .art-app-container .art-info-bar.art-active .art-info-bar-frame .art-info-bar-btn {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .art-app .art-app-wrapper .art-app-container .art-content {
+    position: relative;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    padding-right: 0;
+    padding-top: 53px;
+  }
+  footer {
+      margin-bottom: 70px !important;
+  }
+  .art-app .art-app-wrapper .art-app-container .art-content .art-scroll-frame {
+    height: calc(100vh - 53px);
+  }
+  .art-app .art-app-wrapper .art-app-container .art-content.art-active {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .art-app .art-app-wrapper .art-app-container .art-content.art-active .art-curtain {
+    pointer-events: all;
+    opacity: 1;
+  }
+  .art-app .art-app-wrapper .art-app-container .art-menu-bar {
+    position: absolute;
+    right: -230px;
+    width: 230px;
+    height: 100vh;
+  }
+  .art-app .art-app-wrapper .art-app-container .art-menu-bar.art-active {
+    -webkit-transform: translateX(-230px);
+            transform: translateX(-230px);
+  }
+  .art-app .art-app-wrapper .art-app-container .art-menu-bar .art-menu-bar-btn {
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  .art-app .art-app-wrapper .art-app-container .art-menu-bar.art-active .art-menu-bar-btn {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@media (max-width: 290px) {
+  .art-app {
+    /* ----- info bar ----- */
+  }
+  .art-app .art-info-bar {
+    width: 100vw;
+  }
+}
+/* ------------------------------
+
+app marcup (after 230px)
+
+------------------------------ */
+@media (max-width: 230px) {
+  .art-app {
+    /* ----- menu bar ----- */
+  }
+  .art-app .art-menu-bar {
+    width: 100vw;
+  }
+}
 /* ------------------------------
 
 app marcup (after 920px)
@@ -1555,7 +1694,7 @@ content
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 60px;
+  padding: 50px;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(45, 45, 58, 0.6)), color-stop(50%, rgba(45, 45, 58, 0.5)), to(rgba(43, 43, 53, 0.5)));
   background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.6) 15%, rgba(45, 45, 58, 0.5) 50%, rgba(43, 43, 53, 0.7) 100%);
@@ -2511,37 +2650,177 @@ portfolio
 content (after 1600px)
 
 ------------------------------ */
-
+@media (max-width: 1600px) {
+  .art-banner .art-banner-overlay .art-banner-title h1 {
+    color: #fafafc;
+    font-size: 42px;
+  }
+  .art-banner .art-banner-overlay .art-banner-photo {
+    width: 330px;
+  }
+}
 /* ------------------------------
 
 content (after 1400px)
 
 ------------------------------ */
+@media (max-width: 1400px) {
+  .art-banner-back {
+    display: none;
+  }
 
+  .art-banner .art-banner-overlay .art-banner-title h1 {
+    color: #fafafc;
+    font-size: 36px;
+  }
+  .art-banner .art-banner-overlay .art-banner-photo {
+    width: 320px;
+  }
+}
 /* ------------------------------
 
 content (after 1200px)
 
 ------------------------------ */
+@media (max-width: 1200px) {
+  .art-banner .art-banner-overlay .art-banner-photo {
+    display: none;
+  }
 
+  .art-grid.art-grid-2-col .art-grid-item {
+    width: 50%;
+  }
+  .art-grid.art-grid-3-col .art-grid-item {
+    width: 50%;
+  }
+}
 /* ------------------------------
 
 content (after 920px)
 
 ------------------------------ */
+@media (max-width: 920px) {
+  .art-banner .art-banner-overlay {
+    padding: 50px 30px;
+  }
+  .art-banner .art-banner-overlay .art-banner-title {
+    text-align: center;
+  }
+  .art-banner .art-banner-overlay .art-banner-title h1 {
+    color: #fafafc;
+    font-size: 46px;
+  }
+  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame a {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame a:first-child {
+    margin-bottom: 15px;
+  }
 
+  .art-code {
+    min-height: 70px;
+    margin-bottom: 0;
+  }
+
+  .art-timeline .art-timeline-content {
+    margin-right: 30px;
+  }
+
+  .fancybox-container {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .fancybox-toolbar {
+    width: 100vw;
+  }
+
+  .fancybox-navigation {
+    width: 100%;
+    position: absolute;
+    bottom: 35px;
+  }
+}
 /* ------------------------------
 
 content (after 768px)
 
 ------------------------------ */
+@media (max-width: 768px) {
+  .art-section-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .art-section-title .art-right-frame {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .art-grid.art-grid-2-col .art-grid-item {
+    width: 100%;
+  }
+  .art-grid.art-grid-3-col .art-grid-item {
+    width: 100%;
+  }
+
+  .art-filter {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .art-filter a {
+    margin: 0 0 10px;
+  }
+
+  .art-m-hidden {
+    display: none;
+  }
+}
 /* ------------------------------
 
 content (after 500px)
 
 ------------------------------ */
+@media (max-width: 500px) {
+  .art-section-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .art-section-title .art-right-frame {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .art-grid.art-grid-2-col .art-grid-item {
+    width: 100%;
+  }
+  .art-grid.art-grid-3-col .art-grid-item {
+    width: 100%;
+  }
+}
 /* ------------------------------
 
 burger button
@@ -2672,6 +2951,17 @@ html.is-animating .fade-left {
     display: none !important;
 }
 
-
+@media (max-width: 920px) {
+  .transition-fade .art-price.art-popular-price {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .first-avatar {
+      display: none !important;
+  }
+  .second-avatar {
+      display: flex !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
