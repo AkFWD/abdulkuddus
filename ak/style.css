@@ -2656,7 +2656,7 @@ content (after 1600px)
     font-size: 42px;
   }
   .art-banner .art-banner-overlay .art-banner-photo {
-    width: 330px;
+    width: 280px;
   }
 }
 /* ------------------------------
@@ -2666,7 +2666,7 @@ content (after 1400px)
 ------------------------------ */
 @media (max-width: 1400px) {
   .art-banner-back {
-    display: none;
+    display: fixed;
   }
 
   .art-banner .art-banner-overlay .art-banner-title h1 {
@@ -2674,7 +2674,7 @@ content (after 1400px)
     font-size: 36px;
   }
   .art-banner .art-banner-overlay .art-banner-photo {
-    width: 320px;
+    width: 280px;
   }
 }
 /* ------------------------------
@@ -2684,7 +2684,7 @@ content (after 1200px)
 ------------------------------ */
 @media (max-width: 1200px) {
   .art-banner .art-banner-overlay .art-banner-photo {
-    display: none;
+    display: fixed;
   }
 
   .art-grid.art-grid-2-col .art-grid-item {
