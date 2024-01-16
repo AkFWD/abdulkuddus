@@ -98,7 +98,7 @@ common
 body {
 	margin:0;
 	padding:0;
-  color: #bacee3;
+  color:#edf0f3;
   font-size: 12px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -474,6 +474,7 @@ space
 }
 
 .mb-15 {
+	text-align:justify;
   margin-bottom: 15px;
 }
 
@@ -1733,6 +1734,7 @@ content
 
 /* ----- services -- cirkle--- */
 .art-service-icon-box {
+
   margin-bottom: 30px;
   position: relative;
   z-index: 1;
