@@ -2792,6 +2792,24 @@ html.is-animating .fade-left {
 .second-avatar {
     display: none !important;
 }
+/* ----- touch device ----- */
+@media (pointer: coarse) {
+  .art-portfolio-item-frame .art-item-hover {
+    opacity: 0.5;
+  }
+
+  .art-grid .art-grid-item .art-item-description {
+    position: relative;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .art-grid .art-grid-item:hover .art-item-description {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 
 
 
